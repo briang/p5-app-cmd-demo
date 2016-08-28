@@ -1,0 +1,12 @@
+#!/usr/bin/env perl
+
+BEGIN {
+    # This is only going to work from within the source folder
+
+    use FindBin;
+    use lib "$FindBin::Bin/../lib"
+}
+
+use App::Kiwi;
+
+App::Kiwi->run;
